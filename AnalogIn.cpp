@@ -15,7 +15,7 @@ const float AnalogIn::fsr_inv = 1.0f / 1023.0f;
  * @brief Constructs analog input
  * @param pin Platform-specific pin ID
  */
-AnalogIn::AnalogIn(Platform::pintype_t pin)
+AnalogIn::AnalogIn(Platform::pin_t pin)
 {
 	this->pin = pin;
 	pinMode(pin, INPUT);

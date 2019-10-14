@@ -24,13 +24,13 @@
 class AnalogIn
 {
 public:
-	AnalogIn(PLATFORM_PIN_TYPE pin);
+	AnalogIn(Platform::pintype_t pin);
 	float read();
 	uint16_t read_u16();
 	operator float();
 protected:
 	static const float fsr_inv;
-	PLATFORM_PIN_TYPE pin;
+	Platform::pintype_t pin;
 };
 
 #endif
